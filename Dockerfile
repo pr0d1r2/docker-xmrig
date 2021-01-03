@@ -13,9 +13,11 @@ RUN apt-get update && \
     libuv1-dev \
     libmicrohttpd-dev \
     libssl-dev \
+    libhwloc-dev \
     && \
     git clone https://github.com/xmrig/xmrig.git && \
     cd xmrig && \
+    git checkout v6.7.0 && \
     mkdir build && \
     cd build && \
     cmake .. && \
